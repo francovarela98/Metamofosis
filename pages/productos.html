@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>METAMORFOSIS CAFE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../CSS/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,80 +14,92 @@
 </head>
 <body>
     <header>
-        
-        <nav>
-            <ul>
-                <li> <a href="../index.html">home</a></li>
-                <li><a href="productos.html">productos</a></li>
-                <li><a href="nosotros.html">nosotros</a></li>
-                <li><a href="galeria.html">galería</a></li>
-                <li><a href="contacto.html">contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+                <img src="Meta_Mesa de trabajo 1.png" height=50px width=50px alt="">
+              <a class="navbar-brand" href="#">La Metemorfosis</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galería</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
     </header>
     <main>
 
         <h1>productos</h1>
         <div class="grillaProductos">
-        <div class="contenedor__Foto contenedor__Foto--produUno">
-        <img src="produ/producto-10.jpg" alt="">
-       </div>
-       <div class="contenedor__Foto contenedor__Foto--produDos">
-        <img src="produ/producto-11.jpg" alt="">
-       </div>
-       <div class="contenedor__Foto contenedor__Foto--produTres">
-        <img src="produ/producto-12.jpg" alt="">
-        </div>
-        <div class="contenedor__Foto  contenedor__Foto--produCuatrp">
-        <img src="produ/producto-13.jpg" alt="">
-        </div>
-        <div class="contenedor__Foto contenedor__Foto--produCinco">
-        <img src="produ/producto-14.jpg" alt="">
-        </div>
-        <div class="contenedor__Foto contenedor__Foto--produCinco">
-            <img src="galeria/cafe.jpg" alt="">
+            <div class="card" style="width: 18rem;">
+                <img src="produ/producto-10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Brasil Natural</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="produ/producto-11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Colombia</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="produ/producto-12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Etiopía</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="produ/producto-13.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Honduras</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="produ/producto-14.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Guatemala</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+              </div>
+       
             </div>
         </div>
-        <table>
-            <tr>
-                <th>productos</th>
-                <th>descripcion</th>
-                <th>precio</th>
-                
-            </tr>
-            <tr>
-                <td>Etiopía</td>
-                <td>Notas dulces</td>
-                <td>$990</td>
-            </tr>
-            <tr>
-                <td>Brasil</td>
-                <td>Lavado natural</td>
-                <td>$890</td>
-            </tr>
-            <tr>
-                <td>Colombia</td>
-                <td>Acidez equilibrada</td>
-                <td>$950</td>
-            </tr>
-            <tr>
-                <td>Honduras</td>
-                <td>Acidez fuerte</td>
-                <td>$950</td>
-            </tr>
-            <tr>
-                <td>Guatemala</td>
-                <td>Notas frutales</td>
-                <td>$950</td>
-            </tr>
-        </table>
+        
+        
 
     </main>
      <footer>
          <p>Seguinos en nuestras redes sociales</p>
 
      </footer>
-    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
 </body>
 </html>

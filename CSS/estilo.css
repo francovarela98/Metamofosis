@@ -7,7 +7,7 @@ header {
     height: 80px;
     width: 100%;
     
-}
+}/*
 nav{
     background-color: black;
     height: 60px;
@@ -43,14 +43,14 @@ a{
     top: 60px;
     flex-direction: row;
     text-transform: uppercase;
-}
+}*/
 body{
     background-color: whitesmoke;
     height: 1000px;
     }
 main{
     color: rgb(112, 107, 107);
-    height: 1500px;
+    height: 1800px;
     margin: 0px 0px 0px 0px;
 }
 h2{
@@ -104,9 +104,10 @@ main p{
     }
 .grillaNos{
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 300px 300px 300px 300px;
-
+    grid-template-columns: 65%;
+    grid-template-rows: 300px 400px 300px 200px;
+    justify-content: center;
+    row-gap:20px; 
 }
 .grillaContacto{
     display: grid;
@@ -163,8 +164,8 @@ input{
 }
 .galeria{
     display:grid;
-    grid-template-rows:  450px 450px 450px;
-    grid-template-columns: 450px 450px 450px;
+    grid-template-rows:  420px 420px 420px;
+    grid-template-columns: 420px 420px 420px;
     grid-template-areas: "fotoUno fotoDos fotoTres"
                           "fotoCuatro fotoCinco fotoSeis"
                           "fotoCuatro fotoSiete fotoOcho";
@@ -179,7 +180,7 @@ input{
 
 }
 .contenedor__Foto:hover{
-    transform: scale(1.5,1.5);
+    transform: scale(1.1,1.1);
     transition: 2s;
 }
 .contenedor__Foto .contenedor__Foto--imagenUno{
@@ -194,8 +195,7 @@ img{
 }
 .grillaProductos{
     display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-columns:  300px 300px;
     align-content: center;
     justify-content: center;
     align-items: center;
