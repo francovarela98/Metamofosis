@@ -61,12 +61,16 @@ h2{
 }
 .grillaHome{
     display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows:   100px 500px;
+    grid-template-columns: 100%;
+    grid-template-rows:   100px  200px 200px;
     grid-template-areas: "title title title"
                          "textoUno imagen textoDos";
     row-gap: 10px;
 
+}
+.carousel{
+    height: 300px;
+    width: auto;
 }
 .tituloHome{
     width: 100%;
