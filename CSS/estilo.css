@@ -64,7 +64,9 @@ h2{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100px  400px 200px;
-    row-gap: 10px;
+    row-gap: 30px;
+    bottom: 20px;
+    
 
 }
 .card-title{
@@ -189,9 +191,6 @@ input{
     display:grid;
     grid-template-rows:  420px 420px 420px;
     grid-template-columns: 420px 420px 420px;
-    grid-template-areas: "fotoUno fotoDos fotoTres"
-                          "fotoCuatro fotoCinco fotoSeis"
-                          "fotoCuatro fotoSiete fotoOcho";
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     justify-items: flex-end;
@@ -225,30 +224,7 @@ img{
     justify-items: center;
     row-gap: 30px;
     column-gap: 50px;
-    /* no pude asignar las areas
-    grid-template-areas: "productoUno espacio      productoDos"
-                         "espacio     productoTres espacio"
-                         "productoCuatro espacio productoCinco";
-        */                 
-    
 }
-/*
-.contenedor__Foto--produUno{
-    grid-area:productoUno;
-}
-.contenedor__Foto--produDos{
-    grid-area:productoDos;
-}
-.contenedor__Foto--produTres{
-    grid-area:productoTres;
-}
-.contenedor__Foto--produCuatro{
-    grid-area:productoCuatro;
-}
-.contenedor__Foto--produCinco{
-    grid-area:productoCinco;
-}
-*/
 .card-body{
     display: flex;
     flex-direction: column;

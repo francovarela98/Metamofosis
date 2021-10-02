@@ -1,0 +1,22 @@
+h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    font-family:'Libre Baskerville', serif;
+    text-align-last: center;
+    text-transform: uppercase ;
+    color: rgb(17, 15, 1);
+    animation-duration: 4s;
+   animation-name: aparecer;
+   animation-iteration-count: 1;
+    } 
+    .grillaProductos{
+        display: grid;
+        grid-template-columns:  300px 300px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        row-gap: 30px;
+        column-gap: 50px;
+    }

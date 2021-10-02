@@ -1,0 +1,37 @@
+h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    font-family:'Libre Baskerville', serif;
+    text-align-last: center;
+    text-transform: uppercase ;
+    color: rgb(17, 15, 1);
+    animation-duration: 4s;
+   animation-name: aparecer;
+   animation-iteration-count: 1;
+    } 
+@mixin card($alto, $coloBg, $color){
+    height: $alto;
+    width: 100%;
+    background-color: $colorBg;
+    padding: 20px 20px 20px 20px;
+    color: $color;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cardUno{
+    @include card(200px, white,black)
+
+}
+.cardDos{
+    @include card(400px, black, white)
+}
+
+.cardTres{
+    @include card(300px, white, black)
+}
+
+.cardCuatro{
+    @include card(100px, black, white)
+}
