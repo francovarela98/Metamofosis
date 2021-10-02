@@ -1,0 +1,55 @@
+.nav{
+    ul{display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    li{
+    text-transform: uppercase;
+    
+    }
+}
+    
+}
+
+.grillaHome{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 150px 400px 200px 300px;
+    row-gap: 20px;
+}
+main{
+    h1{
+        font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    font-family:'Libre Baskerville', serif;
+    text-align-last: center;
+    text-transform: uppercase ;
+    color: rgb(17, 15, 1);
+    animation-duration: 4s;
+   animation-name: aparecer;
+   animation-iteration-count: 1;
+    }
+}
+footer{
+    background-color: black;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+     p{
+       color: whitesmoke;
+       font-size: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: justify;}
+    }
+    @keyframes aparecer {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+     }

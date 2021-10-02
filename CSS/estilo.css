@@ -4,7 +4,7 @@
 }
 header {
     background-color:  black;
-    height: 80px;
+    height: 100px;
     width: 100%;
     
 }/*
@@ -44,6 +44,7 @@ a{
     flex-direction: row;
     text-transform: uppercase;
 }*/
+
 body{
     background-color: whitesmoke;
     height: 1000px;
@@ -54,7 +55,7 @@ main{
     margin: 0px 0px 0px 0px;
 }
 h2{
-    color: olive;
+    color: rgb(20, 16, 4);
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
@@ -62,11 +63,19 @@ h2{
 .grillaHome{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows:   100px  200px 200px;
-    grid-template-areas: "title title title"
-                         "textoUno imagen textoDos";
+    grid-template-rows: 100px  400px 200px;
     row-gap: 10px;
 
+}
+.card-title{
+    text-transform: uppercase;
+}
+.imgindex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    top:30px;
 }
 .carousel{
     height: 300px;
@@ -78,7 +87,7 @@ h2{
     grid-area: title;
 }
 main p{
-    color: rgb(100, 91, 155);
+    color: rgb(6, 27, 11);
     font-size: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -90,7 +99,7 @@ main p{
     font-family:'Libre Baskerville', serif;
     text-align-last: center;
     text-transform: uppercase ;
-    color: rgb(116, 101, 18);
+    color: rgb(17, 15, 1);
     animation-duration: 4s;
    animation-name: aparecer;
    animation-iteration-count: 1;
@@ -109,7 +118,7 @@ main p{
 .grillaNos{
     display: grid;
     grid-template-columns: 65%;
-    grid-template-rows: 300px 400px 300px 200px;
+    grid-template-rows: 250px 400px 300px 200px;
     justify-content: center;
     row-gap:20px; 
 }
@@ -142,13 +151,23 @@ form{
 legend{
     text-transform: uppercase;
 }
-label{
+.form-label{
+    color: olive;
     font-size: 20px;
     text-align:start;
     text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 input{
     align-self: center;
+}
+.imgContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 100px 100px 100px;
+
 }
 .fotoIndex{
     display: flex;
@@ -204,8 +223,8 @@ img{
     justify-content: center;
     align-items: center;
     justify-items: center;
-    row-gap: 10px;
-    column-gap: 20px;
+    row-gap: 30px;
+    column-gap: 50px;
     /* no pude asignar las areas
     grid-template-areas: "productoUno espacio      productoDos"
                          "espacio     productoTres espacio"
@@ -230,6 +249,12 @@ img{
     grid-area:productoCinco;
 }
 */
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 table{
     display: flex;
     justify-content: center;
@@ -249,14 +274,19 @@ td{
     text-align: center;
 }
     footer{
-    background-image: linear-gradient(to bottom, grey, black);
+    background-color: black;
     height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 footer p{
     color: whitesmoke;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: end;
+    text-align: justify;
+    
 }
 @keyframes aparecer {
     0% {
