@@ -67,18 +67,12 @@ h2{
     row-gap: 30px;
     bottom: 20px;
     
-
 }
 .card-title{
     text-transform: uppercase;
 }
-.imgindex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    top:30px;
-}
+
+
 .carousel{
     height: 300px;
     width: auto;
@@ -98,10 +92,12 @@ main p{
     font-style: normal;
     font-weight: 800;
     font-size: 60px;
+
     font-family:'Libre Baskerville', serif;
     text-align-last: center;
     text-transform: uppercase ;
     color: rgb(17, 15, 1);
+    margin-top: 20px;
     animation-duration: 4s;
    animation-name: aparecer;
    animation-iteration-count: 1;
@@ -171,10 +167,11 @@ input{
     margin: 50px 100px 100px 100px;
 
 }
-.fotoIndex{
+.imgIndex{
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
     align-content: center;
 }
 
@@ -231,6 +228,7 @@ img{
     align-items: center;
     justify-content: center;
 }
+/*
 table{
     display: flex;
     justify-content: center;
@@ -256,7 +254,7 @@ td{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-}
+}*/
 footer p{
     color: whitesmoke;
     font-size: 20px;

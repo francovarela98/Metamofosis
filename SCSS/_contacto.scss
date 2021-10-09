@@ -1,0 +1,32 @@
+
+
+.imgContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 100px 100px 100px;
+
+}
+.formulario{ 
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-content: center;
+
+
+legend{
+    text-transform: uppercase;
+    align-items: center;
+}
+.form-label{
+    color: olive;
+    font-size: 20px;
+    text-align:start;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input{
+    align-items: center;
+}
+}

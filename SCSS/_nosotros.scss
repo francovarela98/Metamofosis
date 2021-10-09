@@ -1,4 +1,14 @@
-h1{
+
+.grillaNos{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 600px 600px; 
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+
+    h1{
     font-style: normal;
     font-weight: 800;
     font-size: 60px;
@@ -9,8 +19,20 @@ h1{
     animation-duration: 4s;
    animation-name: aparecer;
    animation-iteration-count: 1;
+   margin-top:150px;
+   .contenedorFoto{
+       width: 100%;
+       height: auto;
+       background-color: whitesmoke;
+       img{
+           max-width: 100%;
+           height: auto;
+       }
+   }
     } 
-@mixin card($alto, $coloBg, $color){
+
+}
+@mixin card($alto, $colorBg, $color){
     height: $alto;
     width: 100%;
     background-color: $colorBg;
@@ -21,17 +43,17 @@ h1{
 }
 
 .cardUno{
-    @include card(200px, white,black)
+    @include card(200px, white,black);
 
 }
 .cardDos{
-    @include card(400px, black, white)
+    @include card(400px, black, white);
 }
 
 .cardTres{
-    @include card(300px, white, black)
+    @include card(300px, white, black);
 }
 
 .cardCuatro{
-    @include card(100px, black, white)
+    @include card(100px, black, white);
 }
