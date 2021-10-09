@@ -1,5 +1,17 @@
 
-
+ .tituloHome{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    font-family:'Libre Baskerville', serif;
+    text-align-last: center;
+    text-transform: uppercase ;
+    color: rgb(17, 15, 1);
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: 1; 
+    top: 220px;
+ }
 .imgContacto{
     display: flex;
     flex-direction: row;

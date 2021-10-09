@@ -1,15 +1,4 @@
-
-.grillaNos{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 700px 600px; 
-    row-gap: 20px;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-
-
-    h1{
+h1{
     font-style: normal;
     font-weight: 800;
     font-size: 60px;
@@ -20,8 +9,17 @@
     animation-duration: 4s;
    animation-name: aparecer;
    animation-iteration-count: 1;
-   margin-top:150px;
-   .contenedorFoto{
+   margin-top:150px;}
+
+.grillaNos{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 700px 600px; 
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    .contenedorFoto{
        width: 100%;
        height: auto;
        background-color: whitesmoke;
@@ -30,9 +28,7 @@
            height: auto;
        }
    }
-    } 
-
-}
+ } 
 @mixin card($alto, $colorBg, $color){
     height: $alto;
     width: 100%;
@@ -57,4 +53,59 @@
 
 .cardCuatro{
     @include card(100px, black, white);
+}
+
+ /*small*/
+ @media only screen and (max-width:300px){
+    main{
+     h1{
+         font-size: 30px;
+     }
+     .grillaNos{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 500px 600px 500px 500px; 
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        .contenedorFoto{
+           width: 100%;
+           height: auto;
+           background-color: whitesmoke;
+           img{
+               max-width: 100%;
+               height: auto;
+           }
+       }
+        }
+     
+     }
+}
+/*medium*/
+@media only screen and (min-width:600px){
+ main{
+     h1{
+         font-size: 40px;
+     }
+
+     .grillaNos{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 500px 500px; 
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        .contenedorFoto{
+           width: 100%;
+           height: auto;
+           background-color: whitesmoke;
+           img{
+               max-width: 100%;
+               height: auto;
+           }
+       }
+        }
+}
 }

@@ -1,4 +1,16 @@
 main{
+    .tituloHome{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 60px;
+        font-family:'Libre Baskerville', serif;
+        text-align-last: center;
+        text-transform: uppercase ;
+        color: rgb(17, 15, 1);
+        animation-duration: 4s;
+        animation-name: aparecer;
+        animation-iteration-count: 1; 
+        top: 220px;}
     .galeria{
         display:grid;
         grid-template-rows:  420px 420px 420px;
@@ -25,4 +37,35 @@ main{
     }
 }
 
-  
+  /*small*/
+  @media only screen and (max-width:300px){
+       main{
+        h1{
+            font-size: 30px;
+        }
+
+        .galeria{
+            display:grid;
+            grid-template-rows:  150px 150px;
+            grid-template-columns: 150px 150px 150px 150px 150px;
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            justify-items: flex-end;}
+        }
+  }
+  /*medium*/
+  @media only screen and (min-width:600px){
+    main{
+        h1{
+            font-size: 40px;
+        }
+
+        .galeria{
+            display:grid;
+            grid-template-rows:  200px 200px;
+            grid-template-columns: 200px 200px 200px 200px 200px;
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            justify-items: flex-end;}
+        }
+  }

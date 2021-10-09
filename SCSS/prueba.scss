@@ -5,7 +5,7 @@
 @import "variables.scss";
 @import "contacto.scss";
 header {
-    background-color: $color;
+    background-color: $colorBg;
     height: 80px;
     width: 100%;}
     
@@ -23,7 +23,7 @@ ul{
     
 
     footer{
-        background-color: black;
+        background-color:$color;
         height: 150px;
         text-transform: uppercase;
         display: grid;
