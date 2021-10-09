@@ -40,19 +40,19 @@ h1{
 }
 
 .cardUno{
-    @include card(200px, white,black);
+    @include card(600px, white,black);
 
 }
 .cardDos{
-    @include card(400px, black, white);
+    @include card(600px, black, white);
 }
 
 .cardTres{
-    @include card(300px, white, black);
+    @include card(500px, white, black);
 }
 
 .cardCuatro{
-    @include card(100px, black, white);
+    @include card(500px, black, white);
 }
 
  /*small*/
