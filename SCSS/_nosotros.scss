@@ -29,31 +29,7 @@ h1{
        }
    }
  } 
-@mixin card($alto, $colorBg, $color){
-    height: $alto;
-    width: 100%;
-    background-color: $colorBg;
-    padding: 20px 20px 20px 20px;
-    color: $color;
-    font-size: 20px;
-    text-align: center;
-}
 
-.cardUno{
-    @include card(600px, white,black);
-
-}
-.cardDos{
-    @include card(600px, black, white);
-}
-
-.cardTres{
-    @include card(500px, white, black);
-}
-
-.cardCuatro{
-    @include card(500px, black, white);
-}
 
  /*small*/
  @media only screen and (max-width:300px){
