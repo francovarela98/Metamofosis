@@ -55,7 +55,7 @@ main {
       grid-template-rows: 100px 200px 150px;
       row-gap: 10px; }
       main .grillaHome .tituloHome {
-        font-size: 10px; } }
+        font-size: 30px; } }
 
 /*small screen*/
 @media only screen and (max-width: 600px) {
@@ -71,15 +71,13 @@ main {
         font-size: 50px; }
       main .grillaHome .imgIndex {
         height: 200px;
-        row-gap: 15px; } }
+        column-gap: 30px; } }
 
 .grillaNos {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 600px 600px;
-  row-gap: 20px;
-  justify-content: center;
-  align-items: center; }
+  grid-template-rows: 200px 300px 300px 200px;
+  row-gap: 20px; }
   .grillaNos h1 {
     font-style: normal;
     font-weight: 800;
@@ -91,14 +89,7 @@ main {
     animation-duration: 4s;
     animation-name: aparecer;
     animation-iteration-count: 1;
-    margin-top: 150px; }
-    .grillaNos h1 .contenedorFoto {
-      width: 100%;
-      height: auto;
-      background-color: whitesmoke; }
-      .grillaNos h1 .contenedorFoto img {
-        max-width: 100%;
-        height: auto; }
+    top: 150px; }
 
 .cardUno {
   height: 200px;
@@ -136,99 +127,51 @@ main {
   font-size: 20px;
   text-align: center; }
 
-main {
-  height: 1800px; }
-  main h1 {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 60px;
-    font-family: 'Libre Baskerville', serif;
-    text-align-last: center;
-    text-transform: uppercase;
-    color: #110f01;
-    animation-duration: 4s;
-    animation-name: aparecer;
-    animation-iteration-count: 1;
-    top: 220px; }
-  main .grillaProductos {
-    display: grid;
-    grid-template-columns: 300px 300px;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    row-gap: 30px;
-    column-gap: 30px; }
-    main .grillaProductos .card-body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
-      main .grillaProductos .card-body img {
-        max-width: 100%;
-        height: auto; }
-
-main .galeria {
+.grillaContacto {
   display: grid;
-  grid-template-rows: 420px 420px 420px;
-  grid-template-columns: 420px 420px 420px;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  justify-items: flex-end; }
-  main .galeria .contenedor__Foto {
-    width: 100%;
-    height: auto;
-    background-color: whitesmoke; }
-    main .galeria .contenedor__Foto img {
-      max-width: 100%;
-      height: auto; }
-
-main .contenedor__Foto:hover {
-  transform: scale(1.1, 1.1);
-  transition: 2s; }
-
-.imgContacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 50px 100px 100px 100px; }
-
-.formulario {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center; }
-  .formulario legend {
-    text-transform: uppercase;
-    align-items: center; }
-  .formulario .form-label {
+  grid-template-columns: 100%;
+  grid-template-rows: 200px 600px; }
+  .grillaContacto .tituloContacto {
+    grid-area: title; }
+  .grillaContacto .imgContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 100px 100px 100px; }
+  .grillaContacto .formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; }
+  .grillaContacto legend {
+    text-transform: uppercase; }
+  .grillaContacto .form-label {
     color: olive;
     font-size: 20px;
     text-align: start;
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .formulario input {
-    align-items: center; }
+  .grillaContacto input {
+    align-self: center; }
 
 header {
   background-color: black;
   height: 80px;
   width: 100%; }
 
-ul {
+.container-fluid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center; }
-  ul li {
+  .container-fluid li {
     text-transform: uppercase; }
 
 footer {
   background-color: black;
   height: 150px;
-  text-transform: uppercase;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 50px 50px 50px;

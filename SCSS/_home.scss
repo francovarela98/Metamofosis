@@ -1,13 +1,13 @@
 
 main{
-  height: 1300px;
+  height: 1200px;
 
     
     .grillaHome{
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows:120px 350px 200px;
-      row-gap: 20px;
+      grid-template-rows:120px 500px 200px;
+      row-gap: 15px;
       
     .tituloHome{
     font-style: normal;
@@ -20,12 +20,17 @@ main{
     animation-duration: 4s;
     animation-name: aparecer;
     animation-iteration-count: 1; 
-    top: 220px;
+    padding-top: 50px;
+   }
+   .carousel{
+     width: 100%;
+     height: auto;
+     
    }
   
     p{
-      font-size: 20px;
-      font-style: normal;
+      font-size: 40px;
+      font-style:oblique;
       text-align: center;
       }
   }
