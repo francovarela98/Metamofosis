@@ -13,13 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
       
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
              <div class="container-fluid">
-                <img src="galeria/Meta_Mesa de trabajo 1.png" height=50px width=50px alt="logo">
+              <a href="../index.html">
+                <img  src="galeria/Meta_Mesa de trabajo 1.png" height=50px width=50px alt="logo">
+              </a> 
               <a class="navbar-brand" href="../index.html">La Metamorfosis</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -48,34 +51,28 @@
 
 
     </header>
-    <main>
+    <main class="mainNos">
         <h1>Nosotros </h1>
         
       <div class="grillaNos">
-       
-          <div class="card" style="width: 22rem;">
-            <img src="galeria/libro5.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">La cafetería comenzó como una propuesta para juntar dos mundos apasionantes: los libros y el café. Poco a poco fuimos creciendo y logrando mejorar nuestro espacio para poder recibir cada vez a más personas.</p>
-            </div>
-          </div><div class="card" style="width: 22rem;">
-            <img src="galeria/porta.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text"> Para conseguir un café de especialidad todo tiene que empezar desde el momento cero: el origen del café, la selección y plantación de una variedad en particular cultivada en una región específica del mundo. Luego el grano seleccionado debe pasar por unos puntos y procesos que juntos harán que el café producido se pueda clasificar como café de especialidad. Estos procesos tienen que ver con el tostado artesanal y la preparación en manos de baristas especializados.</p>
-            </div>
-          </div><div class="card" style="width: 22rem;">
-            <img src="galeria/empresa.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Somos una cafetería que inició en 2017 con mucho trabajo de por medio, para crecer junto a nuestros clientes y brindarles el mejor espacio para poder leer y disfrutar un rico café.</p>
-            </div>
-          </div><div class="card" style="width: 22rem;">
-            <img src="galeria/valores.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Nuestro valores son: Amabilidad, pasión, Presición, Cuidado y Respeto.</p>
-            </div>
-          </div>
-            
-            
+        <div class="card" data-aos="fade-right">
+          <img src="galeria/libro5.jpg" alt="persona con libro">
+          <p class="cardTextN">La cafetería comenzó como una propuesta para juntar dos mundos apasionantes: los libros y el café. Poco a poco fuimos creciendo y logrando mejorar nuestro espacio para poder recibir cada vez a más personas.</p>
+        </div>
+        <div class="card" data-aos="fade-left">
+          <img src="galeria/porta.jpg" alt="portafiltro">
+        <p class="cardTextN">Para conseguir un café de especialidad todo empieza desde el momento cero: el origen del café, la selección y plantación de una variedad cultivada en una región específica. Luego el grano seleccionado debe pasar por unos puntos y procesos que juntos harán que el café de especialidad.</p></div>
+        <div class="card" data-aos="fade-right">
+          <img src="galeria/empresa.jpg" alt="letrero en pared">
+        <p class="cardTextN">Somos una cafetería que inició en 2017 con mucho trabajo de por medio, para crecer junto a nuestros clientes y brindarles el mejor espacio para poder leer y disfrutar un rico café.</p>
+        </div>
+        <div class="card" data-aos="fade-left">
+          <img src="galeria/valores.jpg" alt="persona sirviendo cafe">
+        <p class="cardTextN">
+          Nuestro valores son: Amabilidad, pasión, Presición, Cuidado y Respeto en todo lo que hacemos.
+        </p>
+        </div>
+        
        </div>
       
     </main>
@@ -87,6 +84,7 @@
 
      </footer>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>AOS.init();</script>
 </body>
 </html>

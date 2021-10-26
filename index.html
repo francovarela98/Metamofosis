@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -48,7 +48,7 @@
         </nav>
 
     </header>
-    <main>
+    <main class="mainHome">
       <div class="grillaHome">
         <div>
           <h1 class="tituloHome">la metamorfosis</h1>
@@ -74,12 +74,12 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-       <div>
-          <p>Una nueva experiencia de café acompañado de buena literatura y pastelería de excelencia. La Metamorfosis es una cafetería de espcialidad fundada en 2020 con el objetivo de acercar a la gente dos pasiones: la lectura y la cafeína. Animate a vivir la experiencia.</p>
+       <div data-aos="zoom-in">
+          <p>Una nueva experiencia de café acompañado de buena literatura y pastelería de excelencia. La Metamorfosis es una cafetería de especialidad fundada en 2020 con el objetivo de acercar a la gente dos pasiones: la lectura y la cafeína. Animate a vivir la experiencia.</p>
         </div>
       </div>
         <div class="imgIndex">
-        <div class="card" style="width: 22rem;">
+        <div class="card" style="width: 22rem;" data-aos="fade-up">
           <img src="pages/galeria/libro4.jpg" class="card-img-top" alt="lectura">
           <div class="card-body">
             <h5 class="card-title">Libros</h5>
@@ -88,14 +88,15 @@
           </div>
         </div>
         
-        <div class="card" style="width: 22rem;">
+
+        <div class="card" style="width: 22rem;" data-aos="fade-up">
           <img src="pages/galeria/cafe2.jpg" class="card-img-top" alt="cafeEspecialidad">
           <div class="card-body">
             <h5 class="card-title">Café</h5>
-            <p class="card-text">Con granos seleccionados y cuidadosos métodos de tostado</p>
+            <p class="card-text">Con granos seleccionados y cuidadosos métodos de tostado.</p>
             <a href="pages/productos.html" class="btn btn-dark">Más información</a>
           </div>
-        </div><div class="card" style="width: 22rem;">
+        </div><div class="card" style="width: 22rem;" data-aos="fade-up">
           <img src="pages/galeria/pasteleria2.jpg" class="card-img-top" alt="pastelería">
           <div class="card-body">
             <h5 class="card-title">Pastelería</h5>
@@ -104,6 +105,7 @@
           </div>
         </div>
       </div>
+    
     </main>
      <footer>
        
@@ -115,6 +117,8 @@
 
      </footer>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>AOS.init();</script>
    
     
 </body>

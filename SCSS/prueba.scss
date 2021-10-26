@@ -4,45 +4,5 @@
 @import "galeria.scss";
 @import "variables.scss";
 @import "contacto.scss";
-header {
-    background-color: $colorBg;
-    height: 80px;
-    width: 100%;}
-    
-ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    li{
-        text-transform: uppercase;
-    
-       }
-    }
-    
-
-    footer{
-        background-color:$color;
-        height: 150px;
-        text-transform: uppercase;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 50px 50px 50px;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-
-         p{
-           color: whitesmoke;
-           font-size: 20px;
-          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-          text-align: justify;
-        
-        }
-        .textoPie{
-            font-size:14px;
-            font-style: oblique;
-           }
-        }
-      
+@import "footer.scss";
+@import "header.scss";

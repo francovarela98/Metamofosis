@@ -1,23 +1,39 @@
 
- .tituloHome{
+ .mainContacto{
+    height: 800px;
+    background-color: black;
+ .tituloContacto{
     font-style: normal;
     font-weight: 800;
     font-size: 60px;
     font-family:'Libre Baskerville', serif;
     text-align-last: center;
     text-transform: uppercase ;
-    color: rgb(17, 15, 1);
+    color: olive;
     animation-duration: 4s;
     animation-name: aparecer;
     animation-iteration-count: 1; 
-    top: 220px;
+    top: 20px;
  }
+ .grillaContacto{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 600px;
+     
 .imgContacto{
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 50px 100px 100px 100px;
+    margin-top:50px;
+    margin-bottom: 100px;
+    
+    .img{
+        width: 100%;
+        height: auto;
+    }
 
 }
 .formulario{ 
@@ -25,20 +41,259 @@
     flex-direction: row;
     justify-content:center;
     align-content: center;
+    margin-top:100px;
 
 
 legend{
     text-transform: uppercase;
     align-items: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .form-label{
     color: olive;
     font-size: 20px;
     text-align:start;
     text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 input{
     align-items: center;
+}
+}
+ }
+}
+/*xs*/
+@media screen and(max-width:300px){
+    .mainContacto{
+     height: 1000px;
+    .tituloContacto{
+        font-size: 30px;
+    }
+    .grillaContacto{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 350px;
+    .imgContacto{
+        
+        width: 100%;
+        height: auto;
+        display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+    
+        img{
+            width:200px;
+            height: 200px;;
+        }
+
+}
+legend{
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 15px;
+}
+.form-label{
+    color: olive;
+    font-size: 13px;
+    text-align:start;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+}
+}
+}
+/*sm*/
+@media screen and (min-width:300px){
+    .mainContacto{
+        height: 1000px;
+       .tituloContacto{
+           font-size: 40px;
+       }
+       .grillaContacto{
+           display: grid;
+           grid-template-columns: 100%;
+           grid-template-rows: 350px 450px;
+       .imgContacto{
+           
+           width: 100%;
+           height: auto;
+           display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+       
+           img{
+               width:300px;
+               height: 300px;
+               margin-top: 50px;
+           }
+   
+   }
+   legend{
+       text-transform: uppercase;
+       align-items: center;
+       font-size: 15px;
+   }
+   .form-label{
+       color: olive;
+       font-size: 13px;
+       text-align:start;
+       text-transform: uppercase;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   }
+   }
+}
+/*md*/
+@media screen and (min-width:728px){
+    .mainContacto{
+        height: 1100px;
+       .tituloContacto{
+           font-size: 50px;
+       }
+       .grillaContacto{
+           display: grid;
+           grid-template-columns: 100%;
+           grid-template-rows: 550px 500px;
+       .imgContacto{
+           
+           width: 100%;
+           height: auto;
+           display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+       
+           img{
+               width:500px;
+               height: auto;
+               margin-top: 50px;
+           }
+   
+   }
+   legend{
+       text-transform: uppercase;
+       align-items: center;
+       font-size: 15px;
+   }
+   .form-label{
+       color: olive;
+       font-size: 13px;
+       text-align:start;
+       text-transform: uppercase;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   }
+   }
+}
+/*lg*/
+@media screen and (min-width:996px){
+    .mainContacto{
+        height: 1100px;
+       .tituloContacto{
+           font-size: 60px;
+       }
+       .grillaContacto{
+           display: grid;
+           grid-template-columns: 100%;
+           grid-template-rows: 550px 500px;
+       .imgContacto{
+           
+           width: 100%;
+           height: auto;
+           display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+       
+           img{
+               width:500px;
+               height: auto;
+               margin-top: 50px;
+           }
+   
+   }
+   legend{
+       text-transform: uppercase;
+       align-items: center;
+       font-size: 15px;
+   }
+   .form-label{
+       color: olive;
+       font-size: 13px;
+       text-align:start;
+       text-transform: uppercase;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   }
+   }
+}
+/*xl*/
+@media screen and (min-width:1200px){
+.mainContacto{
+    height: 800px;
+    background-color: black;
+ .tituloContacto{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    font-family:'Libre Baskerville', serif;
+    text-align-last: center;
+    text-transform: uppercase ;
+    color: olive;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: 1; 
+    top: 20px;
+ }
+ .grillaContacto{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 600px;
+     
+.imgContacto{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+    margin-bottom: 100px;
+    
+    .img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+.formulario{ 
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-content: center;
+    margin-top:170px;
+
+
+legend{
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-label{
+    color: olive;
+    font-size: 20px;
+    text-align:start;
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif;
+}
+input{
+    align-items: center;
+}
+}
+ }
 }
 }
