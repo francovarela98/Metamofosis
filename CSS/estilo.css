@@ -800,8 +800,30 @@ main .contenedor__Foto:hover {
       transform: scale(1.1, 1.1);
       transition: 2s; } }
 
-/*small*/
+/*s*/
 @media screen and (min-width: 400px) {
+  .mainGaleria {
+    height: 1500px; }
+    .mainGaleria .galeria {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      justify-items: flex-end; }
+      .mainGaleria .galeria .contenedor__Foto {
+        width: 100%;
+        height: auto;
+        background-color: whitesmoke; }
+        .mainGaleria .galeria .contenedor__Foto img {
+          max-width: 100%;
+          height: auto; }
+    .mainGaleria .contenedor__Foto:hover {
+      transform: scale(1.1, 1.1);
+      transition: 2s; } }
+
+/*small*/
+@media screen and (min-width: 500px) {
   .mainGaleria {
     height: 2000px; }
     .mainGaleria .galeria {
